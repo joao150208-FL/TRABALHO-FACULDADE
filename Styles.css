@@ -68,19 +68,57 @@ nav{
 
 #teste_estilo_lista_ol{
    /* list-style-type: upper-roman; decimal, lower-roman, upper-roman, lower-alpha, letras, numeros romandos etc antes de cada linha.*/
-    list-style-image: url();
+    list-style-image: url('img/senhordosaneis_fundo.jpg');
 }
 
 li{
-    border: solid 3px orange;
+    border: solid 1px orange;
     list-style-position: outside;
 }
 
 #impacto{
-    background-image: url(); /*carrega imagem ao fundo do elemento html*/
+    /* background: url(img/senhordosaneis_fundo.jpg) no-repeat; resume a imagem e como ira se repetir*/
+
+    background-image: url(img/seta_direita_vermelha.png); /*carrega imagem ao fundo do elemento html*/
     background-repeat: no-repeat; /*repeat-x / repeat-y / no-repeat/ configura a forma como a imagem irá repetir ao fundo do elemento html*/
-    
-    /* background-position: center; /* left / right / top / bottom/ denter e pode dois ao mesmo tempo
+
+    /* background-position: center; /* left / right / top / bottom/ denter e pode dois ao mesmo tempo 
     width: 2000px;
-    height: 1500px; */
+    height: 1500px;*/
+
+    background-size: cover;/*serve para definir COMO a img será exibida ao fundo do elemento htmk- contain-cover-px-% auto*/
+
+    background-attachment: fixed;/*define como a img vai lidar com o scroll*/
+
+    text-shadow: 13xp 3px 2px red;/* define a sombra do texto */
+
+    position: relative;
+}
+
+.noticia{
+    border:solid 3px white;
+    width: 200px;
+    position: fixed; /*define o posicionamento atras ou na frente dos elementos html: fixed, relative, absolute e static*/
+    height: 52px;
+    overflow: auto; /*configura o comportamento de quanto por exemplo um texto passa das bordas de um elemento html (da um overflow) visible/hidden/scroll/auto */
+    box: shadow 3px 3px 3px 3px pink; /*define a sombra de um elemento html de bloco*/
+}
+
+.um{
+    border:solid 3px white;
+    width: 200px;
+    background-color: green;
+    z-index: 3; /*define a ordem que o elemento vai ficar uns atras dos outros*/
+}
+
+.dois{
+    border:solid 3px white;
+    width: 200px;
+    background-color: rgb(100, 9, 110);
+}
+
+.tres{
+    border:solid 3px white;
+    width: 200px;
+    background-color: rgb(0, 64, 128);
 }
