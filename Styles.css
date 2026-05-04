@@ -53,11 +53,34 @@ body{
     padding-top: 20px ;  
 }
 
-    nav{
-        text-decoration: none;
-    }
+nav{
+    text-decoration: none;
+}
 
-    .text_display{
-        background-color: orange;
-        display: inline-block;
-    }
+.text_display{
+    background-color: orange;
+    display: inline-block;
+}
+
+#teste_estilo_lista_ul{
+    list-style-type:none; /*disc, circle none define o estilo de marcador da lista nao ordenada (ul)*/
+}
+
+#teste_estilo_lista_ol{
+   /* list-style-type: upper-roman; decimal, lower-roman, upper-roman, lower-alpha, letras, numeros romandos etc antes de cada linha.*/
+    list-style-image: url();
+}
+
+li{
+    border: solid 3px orange;
+    list-style-position: outside;
+}
+
+#impacto{
+    background-image: url(); /*carrega imagem ao fundo do elemento html*/
+    background-repeat: no-repeat; /*repeat-x / repeat-y / no-repeat/ configura a forma como a imagem irá repetir ao fundo do elemento html*/
+    
+    /* background-position: center; /* left / right / top / bottom/ denter e pode dois ao mesmo tempo
+    width: 2000px;
+    height: 1500px; */
+}
